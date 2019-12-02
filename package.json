@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "node ./bin/init.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-winston": "^2.4.0",
+    "helmet": "^3.15.0",
+    "hiroki": "^0.2.6",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.3.15",
+    "serve-favicon": "^2.5.0",
+    "shortid": "^2.2.15",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-formatter-checkstyle-relative-paths": "^1.0.1",
+    "eslint-plugin-security": "^1.4.0"
+  },
+  "name": "open-challenge-api",
+  "version": "0.0.0",
+  "private": false
+}
