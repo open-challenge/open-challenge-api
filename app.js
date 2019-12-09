@@ -10,6 +10,7 @@ const routes = require('./lib/routes');
 const app = express();
 const extractJwt = require('./lib/routes/extract-jwt');
 const publicPath = require('./config/public');
+const cors = require('cors');
 
 function connectMongoose() {
     const mongoose = require('mongoose');
@@ -25,7 +26,7 @@ function initialize() {
         meta: false,
         statusLevels: true
     }));
-
+    app.use(cors());
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended: false}));
     app.use(cookieParser());
