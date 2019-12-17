@@ -11,6 +11,23 @@ const app = express();
 const extractJwt = require('./lib/routes/extract-jwt');
 const publicPath = require('./config/public');
 const cors = require('cors');
+const {Challenges} = require('./lib/models');
+
+
+function dataInitialize() {
+    Challenges.count()
+        .then((count) => {
+            if (!count) {
+                const defaultChallenge = new Challenges({
+                    code: 'function test() { console.log("test") }',
+                    datasets: [{
+                        dataset: ['1']
+                    }]
+                });
+                defaultChallenge.save();
+            }
+        });
+}
 
 function connectMongoose() {
     const mongoose = require('mongoose');
@@ -63,6 +80,8 @@ function initialize() {
             error
         });
     });
+
+    dataInitialize();
 
     return app;
 }
