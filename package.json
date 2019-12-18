@@ -9,6 +9,7 @@
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "express-rate-limit": "^5.0.0",
     "express-winston": "^2.4.0",
     "helmet": "^3.15.0",
     "hiroki": "^0.2.6",
