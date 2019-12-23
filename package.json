@@ -26,6 +26,6 @@
     "eslint-plugin-security": "^1.4.0"
   },
   "name": "open-challenge-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false
 }
