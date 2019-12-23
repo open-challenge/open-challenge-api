@@ -9,3 +9,4 @@ This version enables the new structure to organize the project. Also, we define 
 * Default code updated:
   * return value added.
   * comment added.
+  * Fix default validation condition
